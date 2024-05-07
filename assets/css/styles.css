@@ -1,0 +1,74 @@
+/* Found this reset file info and I will use it here (modified)
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, 
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, figcaption, footer, header, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  start custom css here */
+
+nav {
+  background-color: aqua;
+  height: 100px;
+  width:auto;
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 60vh;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 40%;
+  
+
+  border: 2px black double;
+}
