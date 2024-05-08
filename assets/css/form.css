@@ -1,0 +1,44 @@
+/* CSS for the form on the 'enter the blog info' page */
+
+form {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 95%;
+}
+
+form h3 {
+  font-size: 70%;
+  margin: 7% 0;
+  text-align: center;
+}
+
+form p {
+  margin: 3% 1%;
+  font-size: 40%;
+}
+
+label {
+  display: block;
+}
+
+/* this section made the input field the 'almost' full width */
+.text-input {
+  display: block;
+  width: 95%;
+}
+
+#content {
+  display:inline-block;
+  
+  line-height:180%;
+}
+
+button {
+  padding: 1% 2%;
+  width: 95%;
+  color: #fff;
+  background-color: rgb(10, 10, 10);
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+}
