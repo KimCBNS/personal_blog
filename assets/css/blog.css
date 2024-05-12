@@ -27,10 +27,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-}
 
+body {
+  background-color: white;
+  color: black;
+}
 
 
 ul {
@@ -68,9 +69,9 @@ h4 {
   font-size: smaller;
 }
 .card {
-  background-color: bisque;
+  background-color: rgb(102, 90, 76);
   border-radius: 20px;
   border: 1px solid black;
   padding: 2%;
-
+  margin: 2%;
 }
