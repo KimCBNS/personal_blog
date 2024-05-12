@@ -17,6 +17,12 @@ submitBlog.addEventListener('click', function (event) {
     
     // console log is the button is clicked
     event.preventDefault();
+    console.log(user1.value);
+
+    if (user1.value === "" || blogTitle1.value === "" || blogContent1.value === "") {
+        console.log("data missing");
+        alert('You must enter data in all 3 fields. Please enter and resubmit');
+    } else {
     
     //check first to see if there is anything in local storage
     if (localStorage.getItem('blogbuild')){
@@ -39,6 +45,8 @@ submitBlog.addEventListener('click', function (event) {
     localStorage.setItem('blogbuild', newBlogBuild);
     
     window.location.href = "blog.html";
+}
+
 }
 );
 
