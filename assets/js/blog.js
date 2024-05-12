@@ -10,7 +10,7 @@ const container = document.querySelector('#container')
            console.log(blogDisplay);
 
 
-            // for (let i = 0; i<blogDisplay.length; i++) {
+           for (let i = 0; i<blogDisplay.length; i++) {
             //   //prints each username to the console
             //   console.log(blogDisplay[i].username);
 
@@ -21,9 +21,9 @@ const container = document.querySelector('#container')
 
             card.setAttribute('class', 'card');
 
-            title.textContent = blogDisplay[0].blogTitle;
-            blogContent.textContent = blogDisplay[0].blogContent;
-            author.textContent = blogDisplay[0].username;
+            title.textContent = blogDisplay[i].blogTitle;
+            blogContent.textContent = blogDisplay[i].blogContent;
+            author.textContent = 'Posted by: ' + blogDisplay[i].username;
 
             container.appendChild(card);
 
@@ -32,24 +32,9 @@ const container = document.querySelector('#container')
             card.appendChild(author);
             
 
+           }
 
 
-
-
-              
-            //   card.setAttribute.apply;
-            //   title.appendChild(card);
-            //   blogContent.appendChild(card);
-            //   author.appendChild(card);
-
-
-            //   card.appendChild(container);
-            //   title.appendChild(card);
-            //   blogContent.appendChild(card);
-            //   author.appendChild(card);
-
-
-            // }
     };
 
     console.log(blogDisplay);
