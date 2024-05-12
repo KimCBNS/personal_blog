@@ -46,15 +46,34 @@ table {
 
 /*  start custom css here */
 
-nav {
-  background-color: aqua;
-  height: 5%;
-  width:auto;
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #7c37ec;
+}
+
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 3%;
+  text-decoration: none;
+}
+
+li a {
+  color: white;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #39395e;
+  color:#140c22;
 }
 
 .flex-container {
   display: flex;
-  background-color: DodgerBlue;
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;

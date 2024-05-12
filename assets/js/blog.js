@@ -1,7 +1,30 @@
 // get the container 
 const container = document.querySelector('#container')
 // create the card that needs to display the info
+const bodyback = document.querySelector('body')
+const cards = document.querySelectorAll('div');
 
+
+
+const lightclick = document.getElementById('light');
+lightclick.addEventListener('click', function (event) {
+  console.log('you clicked it'); 
+  const state = lightclick.getAttribute('data-state');
+  
+  if (state === "light") {
+    //lightclick.setAttribute('class', 'light-mode');
+    bodyback.setAttribute('style', 'background-color:black; color:white');
+    lightclick.setAttribute('data-state', "dark");
+    
+
+  } else {
+    //lightclick.setAttribute('class', 'dark-mode');
+    bodyback.setAttribute('style', 'background-color:white; color:black');
+    lightclick.setAttribute('data-state', "light");
+    
+  }
+
+});
 
 
     //check first to see if there is anything in local storage

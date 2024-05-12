@@ -40,5 +40,11 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
 
+footer {
+  font-size: 70%;
+  margin: 7% 0;
+  text-align: center;
+  color: black;
 }
