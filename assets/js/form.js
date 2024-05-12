@@ -9,24 +9,19 @@ const blogContent1 = document.querySelector('#content');
 
 // create an array to hold the objects
 let blogbuild = [];
+//localStorage.clear();
 
-console.log(blogbuild);
-console.log('first step above');
 
 // add a listener to see when form is submitted
 submitBlog.addEventListener('click', function (event) {
     
     // console log is the button is clicked
     event.preventDefault();
-    console.log("button clicked")
-
-
+    
     //check first to see if there is anything in local storage
     if (localStorage.getItem('blogbuild')){
-            blogbuild.push(JSON.parse(localStorage.getItem('blogbuild')));
+            blogbuild = (JSON.parse(localStorage.getItem('blogbuild')));
     }
-
-    console.log(blogbuild);
 
     // create a new object on form submission
     blognew = {
@@ -35,16 +30,15 @@ submitBlog.addEventListener('click', function (event) {
         blogContent: blogContent1.value
     }
 
-    console.log(blognew);
+   
     blogbuild.push(blognew);
-    console.log(blogbuild);
     
-    //console.log(blogbuild);
-    //localStorage.setItem('blogbuild', JSON.stringify(blogbuild));
-
-
+    let newBlogBuild = JSON.stringify(blogbuild);
+    
     // need to store the value of the blog here. but it needs to change for each new blog post
-
-
+    localStorage.setItem('blogbuild', newBlogBuild);
+    
+    window.location.href = "blog.html";
 }
 );
+
