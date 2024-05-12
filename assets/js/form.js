@@ -37,5 +37,8 @@ submitBlog.addEventListener('click', function (event) {
     
     // need to store the value of the blog here. but it needs to change for each new blog post
     localStorage.setItem('blogbuild', newBlogBuild);
+    
+    window.location.href = "blog.html";
 }
 );
+

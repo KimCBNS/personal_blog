@@ -1,0 +1,33 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7c37ec;
+}
+
+li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a {
+  color: white;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #39395e;
+  color:#140c22;
+}
+
+.card {
+  background-color: bisque;
+  border-radius: 20px;
+  border: 1px solid black;
+}
